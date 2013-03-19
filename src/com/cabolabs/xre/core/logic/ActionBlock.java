@@ -83,5 +83,4 @@ public class ActionBlock extends LogicBlock {
       
       return res;
    }
-
 }
