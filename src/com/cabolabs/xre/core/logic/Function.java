@@ -18,7 +18,7 @@ public abstract class Function extends AbstractBlock
 
    public Function(String returnName, DataType returnType)
    {
-      if (returnName == null) returnName = new BigInteger(130, random).toString(32);
+      if (returnName == null || returnName.equals("")) returnName = new BigInteger(130, random).toString(32);
 
       this.returnName = returnName;
       this.returnType = returnType;

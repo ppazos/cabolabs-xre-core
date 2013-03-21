@@ -34,10 +34,12 @@ public class LogicBlock extends AbstractBlock
 
    public List<VariableInstance> execute(String sessionId) throws Exception
    {
+      /* Si un ifBlock o elseBlock tiene solo return sin acciones, no hay blocks pero si returnNames
       if (this.blocks.size() == 0)
       {
          throw new Exception("LogicBlock debe tener algun bloque para ejecutar y no tiene ninguno");
       }
+      */
 
       RuleExecution re = Memory.getInstance().get(sessionId);
 

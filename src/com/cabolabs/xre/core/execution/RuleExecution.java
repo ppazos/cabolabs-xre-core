@@ -95,9 +95,12 @@ public class RuleExecution
          return false;
       }
 
-      for (VariableInstance v : input)
+      if (input != null)
       {
-         this.values.put(v.getDeclaration().getName(), v);
+         for (VariableInstance v : input)
+         {
+            this.values.put(v.getDeclaration().getName(), v);
+         }
       }
 
       boolean ok = true;
